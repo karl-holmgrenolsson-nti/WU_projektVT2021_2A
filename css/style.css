@@ -2,6 +2,9 @@
     grid-template-rows: ;
     grid-template-columns: ;
     grid-template-areas: 
-    "he he he he nav h1 h2 h3 h4 h5"
-    "";
+    "he he nav he he"
+    "se se se se se"
+    "se se se se se"
+    "se se se se se"
+    "fo fo fo fo fo";
 }
