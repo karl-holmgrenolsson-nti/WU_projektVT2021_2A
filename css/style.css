@@ -1,10 +1,44 @@
-#grid_container_hemsida {
-    grid-template-rows: ;
-    grid-template-columns: ;
+*{
+    margin: 0;
+}
+
+.gridwrapper {
+    display: grid;
+    width: 100wm;
+    height: 100vh;
+
     grid-template-areas: 
     "he he nav he he"
     "se se se se se"
     "se se se se se"
     "se se se se se"
+    "fo fo fo fo fo"
     "fo fo fo fo fo";
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 }
+
+.header {
+
+    grid-area: he;
+    background-color: white;
+}
+
+.nav {
+
+    grid-area: na;
+    background-color: green;
+}
+
+.section {
+
+    grid-area: se;
+    background-color: blue;
+}
+
+.footer {
+    background-color: white;
+}
+
+background-image: url("../img/mark-basarab-y421kXlUOQk-unsplash.jpg");
