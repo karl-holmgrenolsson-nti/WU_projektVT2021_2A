@@ -2,14 +2,14 @@
     margin: 0;
 }
 
-.gridwrapper {
+#gridwrapper {
     display: grid;
-    width: 100wm;
+    width: 100vw;
     height: 100vh;
 
     grid-template-areas: 
-    "he he nav he he"
-    "se se se se se"
+    "he he he he he"
+    "na na na na na"
     "se se se se se"
     "se se se se se"
     "fo fo fo fo fo"
@@ -35,10 +35,25 @@
 
     grid-area: se;
     background-color: blue;
+    background-image: url("../img/mark-basarab-y421kXlUOQk-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .footer {
     background-color: white;
 }
 
-background-image: url("../img/mark-basarab-y421kXlUOQk-unsplash.jpg");
+
+
+
+
+.nav-links {
+
+    transition-duration: 1s;
+}
+
+.burger {
+
+    transition-duration: 1s;
+}
