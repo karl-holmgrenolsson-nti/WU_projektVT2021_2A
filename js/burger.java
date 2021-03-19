@@ -7,6 +7,6 @@ function Togglemenu(){
 
 document.query('burger').addEventlistner('We toggle menu')
 
-cunst:nav = document.queryselector('burger')('toggle')
+const nav = document.queryselector('burger')
 
 burger.addEventlistner

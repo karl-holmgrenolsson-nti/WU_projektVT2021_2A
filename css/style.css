@@ -1,22 +1,24 @@
 *{
-    margin: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    
 }
 
 #gridwrapper {
     display: grid;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 340vh;
+    grid-gap: 4px;
 
     grid-template-areas: 
-    "he he he he he"
-    "na na na na na"
+    "he he na h1 h1"
     "se se se se se"
-    "se se se se se"
-    "fo fo fo fo fo"
+    "as as as as as"
+    "ae ae ae ae ae"
     "fo fo fo fo fo";
 
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: 80px 900px  100px 1800px 120px
 }
 
 .header {
@@ -25,25 +27,63 @@
     background-color: white;
 }
 
-.nav {
+.header1 {
 
+    grid-area: h1;
+    background-color: white;
+}
+
+.nav {
+    background-color: white;
     grid-area: na;
-    background-color: green;
 }
 
 .section {
 
+    width: 80%;
+    height: 100%;
+    margin: auto;
+
     grid-area: se;
-    background-color: blue;
+    background-color: black;
     background-image: url("../img/mark-basarab-y421kXlUOQk-unsplash.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
 }
 
-.footer {
+.aside {
+
+    text-align: center;
+    grid-area: as;
+    height: 90%;
+    width: 80%;
+    margin: auto;
     background-color: white;
+    border: grey solid 3px;
+    border-radius: 20px;
 }
 
+.article {
+
+    height: 100%;
+    width: 100%;
+    grid-area: ae;
+    background-image: url(../img/federico-bottos-Z3NceSeZqgI-unsplash.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.gridfooter {
+    background-color: white;
+    grid-area: fo;
+    border-top: black solid 3px;
+    margin: auto;
+
+    width: 80%;
+}
 
 
 
