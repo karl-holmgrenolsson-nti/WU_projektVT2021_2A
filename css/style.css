@@ -1,9 +1,8 @@
 *{
     margin: 0px;
-    box-sizing: border-box;
     
 }
-
+                                    /* index.Html */
 #gridwrapper {
     display: grid;
     width: 100%;
@@ -18,76 +17,174 @@
     "fo fo fo fo fo";
 
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 80px 900px  100px 1800px 120px
+    grid-template-rows: 90px 1200px 50px 1800px 200px
 }
-
+                                /* Headers and jv-burger */
 .header {
 
     grid-area: he;
     background-color: white;
+    border-bottom: whitesmoke solid 3px;
+    background-position: center;
+    background-image: url(../img/Bjornarnas_arbetarparti_logga.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+
+    
+}
+
+.header_h3 {
+    text-align: center;
+    width: 130%;
+    margin: 30px;
 }
 
 .header1 {
 
     grid-area: h1;
     background-color: white;
+    border-bottom: whitesmoke solid 3px;
 }
 
 .nav {
     background-color: white;
     grid-area: na;
+    border-bottom: whitesmoke solid 3px;
 }
-
+                                        /* Slogan */
 .section {
 
-    width: 80%;
+    width: 100%;
     height: 100%;
     margin: auto;
 
     grid-area: se;
-    background-color: black;
-    background-image: url("../img/mark-basarab-y421kXlUOQk-unsplash.jpg");
+    background-color: white;
+    background-image: url(../img/Projekt_21_slogan.jpg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
 
 }
-
+                                        /* gapfiller */
 .aside {
-
-    text-align: center;
+    border-top: grey solid 4px;
+    border-bottom: grey solid 4px;
     grid-area: as;
-    height: 90%;
-    width: 80%;
-    margin: auto;
-    background-color: white;
-    border: grey solid 3px;
-    border-radius: 20px;
-}
 
-.article {
+}
+                            /* Information/wallframe (grid) */
+#gridarticle {
 
     height: 100%;
     width: 100%;
     grid-area: ae;
-    background-image: url(../img/federico-bottos-Z3NceSeZqgI-unsplash.jpg);
+    background-image: url(../img/Background_projekt_21.png);
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10%;
+    grid-template-areas: 
+    "hr hr"
+    "a1 a2"
+    "a3 a4";
 }
 
-.gridfooter {
+.inneheader {
+    grid-area: hr;
+}
+
+.innerarticle_1 {
+    grid-area: a1;
+    color: white;
+    margin: auto;
+    border: white solid 7px;
+    border-radius: 20px;
+    width: 70%;
+    height: 55%;   
+}
+.innerarticle_2 {
+    grid-area: a2;
+    color: white;
+    margin: auto;
+    border: white solid 7px;
+    border-radius: 20px;
+    width: 70%;
+    height: 55%; 
+}
+.innerarticle_3 {
+    grid-area: a3;
+    color: white;
+    margin: auto;
+    border: white solid 7px;
+    border-radius: 20px;
+    width: 70%;
+    height: 55%;
+}
+.innerarticle_4 {
+    grid-area: a4;
+    color: white;
+    margin: auto;
+    border: white solid 7px;
+    border-radius: 20px;
+    width: 70%;
+    height: 55%; 
+}
+
+.hdrh1 {
+    color: white;
+    text-align: right;
+    margin: 10%;
+
+}
+.arth1 {
+    text-align: center;
+    margin: 4px;
+}
+
+.paragraph {
+    margin: 5%;
+}
+
+            /* support, contactinformation (footer) */
+#gridfooter {
     background-color: white;
     grid-area: fo;
     border-top: black solid 3px;
     margin: auto;
-
+    display: grid;
+    height: 70%;
     width: 80%;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "f1 f2 f3  em em em";
+}
+
+.innerfooter1 {
+    
+    margin: 10%;
+    grid-area: f1;
+}
+.innerfooter2 {
+
+    margin: 10%;
+    grid-area: f2;
+}
+
+.innerfooter3 {
+
+    margin: 10%;
+    grid-area: f3;
 }
 
 
-
-
+            /* jv-script burger */
 .nav-links {
 
     transition-duration: 1s;
@@ -97,3 +194,392 @@
 
     transition-duration: 1s;
 }
+
+
+            /* perspective of mobile (POV) */
+@media screen and (max-width:800px) {
+
+#gridwrapper {
+    grid-template-areas: 
+    "he he na h1 h1"
+    "se se se se se"
+    "as as as as as"
+    "ae ae ae ae ae"
+    "fo fo fo fo fo";
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 90px 1200px  100px 1800px 120px
+}
+
+}
+            /* End of index.html */
+
+
+
+
+
+
+
+
+
+
+            
+            /* Omoss.html */
+
+
+#gridwrapper_omoss {
+
+    display: grid;
+    width: 100%;
+    height: 150vh;
+    grid-gap: 6px;
+
+    grid-template-areas: 
+    "he he na h1 h1"
+    "s1 s1 s1 s1 s1"
+    "ho ho ho ho ho"
+    "s2 s2 s2 ro ro"
+    "fo fo fo fo fo";
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 90px 500px 400px 300px;
+}
+
+                        /* Headers and jv-burger */
+.header {
+
+    grid-area: he;
+    background-color: white;
+    border-bottom: whitesmoke solid 3px;
+    background-position: center;
+    background-image: url(../img/Bjornarnas_arbetarparti_logga.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+
+    
+}
+
+.header_h3 {
+    text-align: center;
+    width: 130%;
+    margin: 30px;
+}
+
+.header1 {
+
+    grid-area: h1;
+    background-color: white;
+    border-bottom: whitesmoke solid 3px;
+}
+
+.nav {
+    background-color: white;
+    grid-area: na;
+    border-bottom: whitesmoke solid 3px;
+}
+
+                        /* img / information */
+
+.aside_omoss {
+    grid-area: s1;
+    background-color: red;
+}
+
+.header_omoss {
+    grid-area: ho;
+    background-color: pink;
+}
+
+.scndaside_omoss {
+    grid-area: s2;
+    background-color: blue;
+}
+
+.article_omoss {
+    grid-area: ao;
+    background-color: yellow;
+}
+
+.footer_omoss {
+    grid-area: ro;
+    background-color: white;
+    color: black;
+    border: black solid 4px;
+    border-radius: 20px;
+}
+
+.foh1 {
+    margin: 4%;
+}
+
+#gridfooter {
+    background-color: white;
+    grid-area: fo;
+    border-top: black solid 3px;
+    margin: auto;
+    display: grid;
+    height: 70%;
+    width: 80%;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "f1 f2 f3  em em em";
+}
+
+.innerfooter1 {
+    
+    margin: 10%;
+    grid-area: f1;
+}
+.innerfooter2 {
+
+    margin: 10%;
+    grid-area: f2;
+}
+
+.innerfooter3 {
+
+    margin: 10%;
+    grid-area: f3;
+}
+
+/* End of omoss.html */
+
+
+
+
+
+
+/* butik.html */
+
+#gridwrapper_butik {
+
+    display: grid;
+    width: 100%;
+    height: 170vh;
+    grid-gap: 6px;
+
+    grid-template-areas: 
+    "he he na h1 h1"
+    "em hm hm hm e1"
+    "em pl pl pl e1"
+    "em p1 p1 p1 e1"
+    "fo fo fo fo fo";
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 90px 300px 700px 300px ;
+}
+
+.header {
+
+    grid-area: he;
+    background-color: white;
+    border-bottom: whitesmoke solid 3px;
+    background-position: center;
+    background-image: url(../img/Bjornarnas_arbetarparti_logga.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+
+    
+}
+
+                /* header and jv-script */
+
+.header_h3 {
+    text-align: center;
+    width: 130%;
+    margin: 30px;
+}
+
+.header1 {
+
+    grid-area: h1;
+    background-color: white;
+    border-bottom: whitesmoke solid 3px;
+}
+
+.nav {
+    background-color: white;
+    grid-area: na;
+    border-bottom: whitesmoke solid 3px;
+}
+
+.header_butik {
+
+    background-color: blue;
+    grid-area: hm;
+}
+
+.product_list {
+
+    background-color: red;
+    grid-area: pl;
+}
+
+.scndproduct_list {
+
+    background-color:pink;
+    grid-area: p1;
+}
+
+.empty {
+
+    background-color: white;
+    grid-area: em;
+}
+
+.empty {
+
+    background-color: white;
+    grid-area: e1;
+}
+
+            /* Support */
+
+#gridfooter {
+    background-color: white;
+    grid-area: fo;
+    border-top: black solid 3px;
+    margin: auto;
+    display: grid;
+    height: 70%;
+    width: 80%;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "f1 f2 f3  em em em";
+}
+
+.innerfooter1 {
+    
+    margin: 10%;
+    grid-area: f1;
+}
+.innerfooter2 {
+
+    margin: 10%;
+    grid-area: f2;
+}
+
+.innerfooter3 {
+
+    margin: 10%;
+    grid-area: f3;
+}
+
+                    /* End of butik.html */
+
+
+
+                    /* partiledare.html */
+
+#gridwrapper_partiledare {
+
+    display: grid;
+    width: 100%;
+    height: 130vh;
+    grid-gap: 6px;
+
+    grid-template-areas: 
+    "he he na h1 h1"
+    "pp pp pp pp pp"
+    "t1 t2 t3 t4 t5"
+    "av av av av av"
+    "fo fo fo fo fo";
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 90px 300px 400px 170px ;
+}
+
+                /* header and jv-script */
+.header_h3 {
+    text-align: center;
+    width: 130%;
+    margin: 30px;
+}
+
+.header1 {
+
+    grid-area: h1;
+    background-color: white;
+    border-bottom: whitesmoke solid 3px;
+}
+
+.nav {
+    background-color: white;
+    grid-area: na;
+    border-bottom: whitesmoke solid 3px;
+}
+
+
+/* picture */
+.picture_partiledare {
+    grid-area: pp;
+    background-color: grey;
+}
+
+/* Text and paragraph */
+
+.article1 {
+    background-color: skyblue;
+    grid-area: t1;
+}
+.article2 {
+    background-color: lightpink;
+    grid-area: t2;
+}
+.article3 {
+    background: lightsalmon;
+    grid-area: t3;
+}
+.article4 {
+    background-color: salmon;
+    grid-area: t4;
+}
+
+.article5 {
+    background-color: lightgoldenrodyellow;
+    grid-area: t5;
+}
+
+/* addvertisment and support */
+.addvertisment {
+    grid-area: av;
+    background-color: darkgrey;
+}
+
+#gridfooter {
+    background-color: white;
+    grid-area: fo;
+    border-top: black solid 3px;
+    margin: auto;
+    display: grid;
+    height: 70%;
+    width: 80%;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "f1 f2 f3  em em em";
+}
+
+.innerfooter1 {
+    
+    margin: 10%;
+    grid-area: f1;
+}
+.innerfooter2 {
+
+    margin: 10%;
+    grid-area: f2;
+}
+
+.innerfooter3 {
+
+    margin: 10%;
+    grid-area: f3;
+}
+
+                        /* End of partiledare.html */

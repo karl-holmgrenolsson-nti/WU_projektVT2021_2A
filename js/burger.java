@@ -10,3 +10,4 @@ document.query('burger').addEventlistner('We toggle menu')
 const nav = document.queryselector('burger')
 
 burger.addEventlistner
+
