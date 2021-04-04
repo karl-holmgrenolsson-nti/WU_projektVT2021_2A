@@ -9,12 +9,30 @@
 </head>
 <body>
     <div id="gridwrapper_butik">
-        <header class="header"><h3 class="header_h3"><a href="http://127.0.0.1:5500/index.html">Björnarnas Arbetarparti</a></h3></header>
+        <header class="header"><h3 class="header_h3" ><a href="http://127.0.0.1:5500/index.html">Björnarnas Arbetarparti</a></h3></header>
         <header class="header1"></header>
-        <nav class="nav"></nav>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="partiledare.html">Partiledare</a></li>
+                <li><a href="omoss.html">Om oss</a></li>
+                <li><a href="butik.html">Butik</a></li>
+                <li><a href="support.html">Kundservice</a></li>
+            </ul>
+            <div id="hamburger">
+                <div class="design_hamburger1"></div>
+                <div class="design_hamburger2"></div>
+                <div class="design_hamburger3"></div>
+            </div>
+        </nav>
 
         <header class="header_butik"></header>
-        <article class="product_list"></article>
+        <article id="product_list">
+            <article class="product1"></article>
+            <article class="product2"></article>
+            <article class="product3"></article>
+            <article class="product4"></article>
+        </article>
         <article class="scndproduct_list"></article>
         <aside class="empty"></aside>
 
@@ -28,5 +46,6 @@
     
             </footer>
     </div>
+    <script src="js/burger.js"></script>
 </body>
 </html>
