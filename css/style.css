@@ -29,7 +29,7 @@ a{
     "fo fo fo fo fo";
 
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 90px auto 50px 1800px 200px
+    grid-template-rows: 90px 700px 50px 1800px 200px
 }
                                 /* Headers and jv-burger */
 .header {
