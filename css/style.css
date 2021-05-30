@@ -15,10 +15,11 @@ a{
 
 
                         /* index.Html */
+
 #gridwrapper {
     display: grid;
     width: 100%;
-    height: 340vh;
+    height: 310vh;
     grid-gap: 4px;
 
     grid-template-areas: 
@@ -29,9 +30,11 @@ a{
     "fo fo fo fo fo";
 
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 90px 700px 50px 1800px 200px
+    grid-template-rows: 90px auto 50px 1400px 200px
 }
+
                                 /* Headers and jv-burger */
+
 .header {
 
     grid-area: he;
@@ -41,14 +44,7 @@ a{
     background-image: url(../img/Bjornarnas_arbetarparti_logga.png);
     background-size: 10%;
     background-repeat: no-repeat;
-
     
-}
-
-.header_h3 {
-    text-align: center;
-    width: 130%;
-    margin: 30px;
 }
 
 .header1 {
@@ -99,7 +95,7 @@ a{
     display: grid;
     grid-gap: 4px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 15%;
     grid-template-areas: 
     "hr hr"
     "a1 a2"
@@ -152,7 +148,7 @@ a{
 
 .hdrh1 {
     color: white;
-    text-align: right;
+    text-align: center;
     margin: 10%;
 
 }
@@ -260,6 +256,11 @@ a{
 @media screen and (max-width:800px) {
 
 #gridwrapper {
+    display: grid;
+    width: 100%;
+    height: 310vh;
+    grid-gap: 4px;
+
     grid-template-areas: 
     "he he na h1 h1"
     "se se se se se"
@@ -268,7 +269,7 @@ a{
     "fo fo fo fo fo";
 
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 90px 400px 50px auto 10px
+    grid-template-rows: 90px 400px 50px 2700px 10px
 }
 
 .header {
@@ -282,6 +283,28 @@ a{
     background-repeat: no-repeat;
 
     
+}
+
+#gridarticle {
+
+    height: 100%;
+    width: 100%;
+    grid-area: ae;
+    background-image: url(../img/Background_projekt_21.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10%;
+    grid-template-areas: 
+    "hr hr"
+    "a1 a1"
+    "a2 a2"
+    "a3 a3"
+    "a4 a4";
 }
 
 #gridfooter {
@@ -915,6 +938,31 @@ a{
 
     margin: 10%;
     grid-area: f3;
+}
+
+                /* perspective of mobile (POV) */
+
+@media screen and (max-width:800px) {
+
+#gridwrapper_support {
+
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+
+    grid-template-areas:
+    "he he na h1 h1"
+    "hs hs hs hs hs"
+    "at at at at at"
+    "st st st st st"
+    "tt tt tt tt tt"
+    "fo fo fo fo fo";
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 90px 150px 70px 60px 300px;
+}
+
 }
 
             /* End of support.html */
